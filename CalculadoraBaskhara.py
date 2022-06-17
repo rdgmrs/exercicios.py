@@ -21,16 +21,16 @@ print(f'sua função do segundo grau é: {a}.x²{b}x{c}=0')
 
 ###############################
 
-delta = int(b)*int(b)-int(4*int(a)*int(c))
-raiz_delta = int(delta ** 0.5)
+delta = float(b)*float(b)-float(4*float(a)*float(c))
+raiz_delta = float(delta ** 0.5)
 
 print(f'o delta é: {delta}')
 print(delta)
 print(f'a raiz quadrada de {delta} é {raiz_delta}')
 
-x1 =  (-int(b)+int(raiz_delta))/(int(2)*int(a))
+x1 =  (-float(b)+float(raiz_delta))/(float(2)*float(a))
 print (f'resultado 1 é {x1}')
-x2 =  (-int(b)-int(raiz_delta))/(int(2)*int(a))
+x2 =  (-float(b)-float(raiz_delta))/(float(2)*float(a))
 print (f'resultado 2 é {x2}')
 
 plt.scatter(x1,x2)
