@@ -1,4 +1,8 @@
 #projeto formula de bhaskara
+import matplotlib.pyplot as plt
+
+
+
 
 #inserindo dados
 print("insira a,b,c para descobrir x ou seja as raizes")
@@ -28,3 +32,6 @@ x1 =  (-int(b)+int(raiz_delta))/(int(2)*int(a))
 print (f'resultado 1 é {x1}')
 x2 =  (-int(b)-int(raiz_delta))/(int(2)*int(a))
 print (f'resultado 2 é {x2}')
+
+plt.scatter(x1,x2)
+plt.show()
